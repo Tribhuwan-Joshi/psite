@@ -1,0 +1,25 @@
+---
+const platform = 'github';
+const username = 'Tribhuwan-Joshi';
+import Social from './Social.astro';
+---
+
+<style>
+  footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+</style>
+<footer>
+  <p>
+    Learn more about my projects on <a href={`https://github.com/${username}`}
+      >{platform}</a
+    >!
+  </p>
+  <div>
+    <Social platform="github" username="Tribhuwan-Joshi" />
+    <Social platform="leetcode" username="Tribhuwan-Joshi" />
+  </div>
+</footer>
